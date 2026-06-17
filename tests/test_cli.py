@@ -5,6 +5,7 @@ inserts color/bold styles between every option's leading `--` and the rest of
 the name when CI=true / FORCE_COLOR=1 is set (which GitHub Actions does by
 default). The literal `--flag` substring won't be in raw bytes there, but it
 is in plain-text mode."""
+
 import re
 
 from typer.testing import CliRunner
